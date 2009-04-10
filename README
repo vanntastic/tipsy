@@ -54,4 +54,9 @@ A rake file has been included to easily install this plugin for a rails project,
   
   rake tipsy:install
   
+3. Add the following into your layout file:
+
+  <%= javascript_include_tag 'jquery.tipsy.js' %>
+  <%= stylesheet_link_tag 'tipsy' %>
+  
 Please refer to the docs directory for more examples and documentation.
