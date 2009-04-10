@@ -39,4 +39,19 @@ Remember to include jquery.tipsy.js *after* including the main jQuery library.
 	});
 </script>
 
+== Installing for a rails project
+
+A rake file has been included to easily install this plugin for a rails project, here's how you do it:
+
+1. Make sure that the tipsy source is in public/javascripts/tipsy, you can actually just do:
+  
+  # assuming you're at the root of your rails project:
+  cd public/javascripts
+  git clone git://github.com/vanntastic/tipsy.git
+  cd tipsy
+
+2. Run:
+  
+  rake tipsy:install
+  
 Please refer to the docs directory for more examples and documentation.
