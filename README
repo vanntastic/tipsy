@@ -37,6 +37,14 @@ Remember to include jquery.tipsy.js *after* including the main jQuery library.
 	$(function() {
 		$('a[rel=tipsy]').tipsy({fade: true, gravity: 'n'});
 	});
+	
+  // if you want to apply it to anything with a title
+  $('a').each(function(index) {
+    if ($(this).attr('title') != "") {
+      $(this).tipsy({fade: false, gravity: 'n'});
+    };
+  });
+    
 </script>
 
 == Installing for a rails project
